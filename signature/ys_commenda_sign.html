@@ -3,9 +3,15 @@
 <head>
   <meta charset="utf-8">
   <title>Email Signature Preview</title>
+
+  <!-- Inter font (works in the browser preview; many email clients may fallback to system fonts) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
   <style>
     body {
-      font-family: Tahoma, Geneva, Verdana, sans-serif;
+      font-family: Inter, Tahoma, Geneva, Verdana, sans-serif;
       padding: 4px;
       background-color: #f5f5f5;
       display: flex;
@@ -22,23 +28,22 @@
     }
   </style>
 </head>
-<body>
 
+<body>
   <div class="signature-container">
-    
-    <table cellpadding="0" cellspacing="0" border="0" 
-           style="font-family: Tahoma, Geneva, Verdana, sans-serif; color: #333333; width: 680px; max-width: 100%;">
-      
+    <table cellpadding="0" cellspacing="0" border="0"
+      style="font-family: Inter, Tahoma, Geneva, Verdana, sans-serif; color: #333333; width: 680px; max-width: 100%;">
+
       <tr>
         <td>
           <table cellpadding="0" cellspacing="0" border="0" style="width: auto;">
             <tr>
-              
+
               <td style="vertical-align: middle; padding: 0;">
                 <a href="https://www.commenda.io/" target="_blank" style="text-decoration: none; border: 0;">
                   <img src="https://raw.githubusercontent.com/yashveeeeeer/commenda-assets/main/gifs/Commenda_Logo.gif"
-                       alt="Commenda"
-                       style="display: block; width: 240px; max-width: 100%; height: auto; border: 0; border-radius: 6px;">
+                    alt="Commenda"
+                    style="display: block; width: 240px; max-width: 100%; height: auto; border: 0; border-radius: 6px;">
                 </a>
               </td>
 
@@ -49,21 +54,24 @@
               <td style="vertical-align: middle; padding-left: 12px;">
                 <table cellpadding="0" cellspacing="0" border="0">
                   <tr>
-                    <td style="font-family: Tahoma, Geneva, Verdana, sans-serif; font-size: 18px; font-weight: 700; color: #000000; letter-spacing: 0.5px; text-transform: uppercase; white-space: nowrap;">
-                      YASHVEER SINGH
+                    <!-- Title Case name + remove uppercase transform -->
+                    <td style="font-family: Inter, Tahoma, Geneva, Verdana, sans-serif; font-size: 18px; font-weight: 600; color: #000000; letter-spacing: 0.5px; white-space: nowrap;">
+                      Yashveer Singh
                     </td>
                   </tr>
+
                   <tr>
-                    <td style="font-family: Tahoma, Geneva, Verdana, sans-serif; font-size: 14px; color: #666666; font-weight: 500; padding-bottom: 8px;">
+                    <td style="font-family: Inter, Tahoma, Geneva, Verdana, sans-serif; font-size: 14px; color: #666666; font-weight: 600; padding-bottom: 8px;">
                       Automation and GIS Operations Lead
                     </td>
                   </tr>
+
                   <tr>
-                    <td style="font-family: Tahoma, Geneva, Verdana, sans-serif; font-size: 12px; color: #888888; line-height: 1.4;">
+                    <td style="font-family: Inter, Tahoma, Geneva, Verdana, sans-serif; font-size: 12px; color: #888888; line-height: 1.4; font-weight: 400;">
                       Commenda Technologies Inc.<br>
                       111 Ellis St, 5th Floor<br>
                       San Francisco, California 94102<br><br>
-                      <a href="https://www.commenda.io/" target="_blank" style="color:#0b57d0; text-decoration:none;">
+                      <a href="https://www.commenda.io/" target="_blank" style="color:#0b57d0; text-decoration:none; font-weight: 600;">
                         https://www.commenda.io/
                       </a>
                     </td>
@@ -81,7 +89,7 @@
       </tr>
 
       <tr>
-        <td style="font-family: Tahoma, Geneva, Verdana, sans-serif; font-size: 9px; line-height: 1.35; color: #9a9a9a;">
+        <td style="font-family: Inter, Tahoma, Geneva, Verdana, sans-serif; font-size: 9px; line-height: 1.35; color: #9a9a9a; font-weight: 400;">
           <span style="font-weight: 600; color:#8a8a8a;">Confidentiality Notice:</span>
           The contents of this email and any attachments are intended solely for the addressee(s) and may contain confidential and/or privileged information and may be legally protected from disclosure. If you are not the intended recipient of this message or their agent, or if this message has been addressed to you in error, please immediately alert the sender by reply email and then delete this message and any attachments. If you are not the intended recipient, you are hereby notified that any use, dissemination, copying, or storage of this message or its attachments is strictly prohibited.
         </td>
@@ -89,5 +97,5 @@
 
     </table>
   </div>
-  </body>
+</body>
 </html>
